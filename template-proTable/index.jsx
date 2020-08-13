@@ -1,6 +1,6 @@
 /**
  * @title: proTable 列表模版
- * @des: 需要做修改的搜索 “ tudo ”，已经标示
+ * @des: 需要做修改的搜索 “ todo ”，已经标示
  * @Time: 2020.06.29
  * @ty
  */
@@ -11,7 +11,7 @@ import { Button, Space } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 // import ImgPreview from '@/components/ImgPreview';
 
-// tudo
+// todo
 const proTableTem = props => {
   const { dispatch } = props;
   const actionRef = useRef(); // actionRef.current.reload();
@@ -95,7 +95,7 @@ const proTableTem = props => {
     delete currentValue.current;
     if (dispatch) {
       await dispatch({
-        // tudo
+        // todo
         type: '',
         payload: { ...currentValue },
         cb: res => {
@@ -110,11 +110,11 @@ const proTableTem = props => {
   return (
     <div style={{padding: 24}}>
       <ProTable
-        // tudo
+        // todo
         headerTitle="列表"
         scroll={{ x: 1500 }}
         actionRef={actionRef}
-        // tudo
+        // todo
         rowKey="id"
         request={params => query(params)}
         columns={columns}
@@ -135,7 +135,7 @@ const proTableTem = props => {
   );
 };
 
-// tudo
+// todo
 function mapStateToProps({ loading }) {
   return {
     loading: loading.effects['']

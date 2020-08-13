@@ -1,19 +1,19 @@
 /**
- * @des: 需要做修改的搜索 “ tudo ”，已经标示
+ * @des: 需要做修改的搜索 “ todo ”，已经标示
  */
 
- // tudo
+ // todo
 import { xxapi } from '@/services/api';
 
 const Model = {
-  // tudo
+  // todo
   namespace: '',
 
   state: {},
 
   effects: {
     * fetchData ({ payload, callback }, { call, put }) {
-      // tudo
+      // todo
       const res = yield call(xxapi, payload);
         yield put({
           type: 'save',
